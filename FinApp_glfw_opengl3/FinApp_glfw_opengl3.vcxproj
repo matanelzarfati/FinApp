@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b3ecc696-a0b7-4b50-ad4f-981c274a3174}</ProjectGuid>
+    <RootNamespace>FinAppglfwopengl3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs\ImGui\GLFW_OpenGL;$(SolutionDir)libs\cpp-httplib;$(SolutionDir)libs\cpp-httplib\openssl\include\;$(SolutionDir)libs\nlohmann;$(SolutionDir)libs\ImGui\GLFW_OpenGL\GLFW;$(SolutionDir)libs\stb;$(SolutionDir)libs\ImPlot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <CompileAsManaged>
+      </CompileAsManaged>
+      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)libs\;$(SolutionDir)libs\ImGui\GLFW_OpenGL\GLFW\;$(SolutionDir)libs\cpp-httplib\openssl\;$(SolutionDir)libs\cpp-httplib\openssl\lib;$(SolutionDir)libs\cpp-httplib\openssl\bin</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libs\cpp-httplib\example\client.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\libs\cpp-httplib\example\hello.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\libs\cpp-httplib\example\server.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\libs\cpp-httplib\example\simplesvr.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui.cpp" />
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_demo.cpp" />
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_draw.cpp" />
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_tables.cpp" />
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_widgets.cpp" />
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\misc\cpp\imgui_stdlib.cpp" />
+    <ClCompile Include="..\libs\ImPlot\implot.cpp" />
+    <ClCompile Include="..\libs\ImPlot\implot_demo.cpp" />
+    <ClCompile Include="..\libs\ImPlot\implot_items.cpp" />
+    <ClCompile Include="FinApp_client.cpp" />
+    <ClCompile Include="logger.cpp" />
+    <ClCompile Include="stocks.cpp" />
+    <ClCompile Include="gui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libs\cpp-httplib\httplib.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\GLFW\glfw3.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\GLFW\glfw3native.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imconfig.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_glfw.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui_internal.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imstb_rectpack.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imstb_textedit.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imstb_truetype.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\misc\cpp\imgui_stdlib.h" />
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\misc\single_file\imgui_single_file.h" />
+    <ClInclude Include="..\libs\ImPlot\implot.h" />
+    <ClInclude Include="..\libs\ImPlot\implot_internal.h" />
+    <ClInclude Include="..\libs\nlohmann\nlohmann\json.hpp" />
+    <ClInclude Include="..\libs\stb\stb_image.h" />
+    <ClInclude Include="logger.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="stocks.h" />
+    <ClInclude Include="gui.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource Files\abrvList_NASDAQ100.json" />
+    <None Include="Resource Files\abrvList_SP500.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

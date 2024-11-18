@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\libs/ImGui">
+      <UniqueIdentifier>{5e63cee0-154f-4243-983e-9a0db1cad917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libs/ImGui">
+      <UniqueIdentifier>{80e0f870-4405-4eea-a040-0c7dfe348ef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libs/cpp-httplib">
+      <UniqueIdentifier>{aed22bcb-9af1-44c4-9964-0bb2e82c17bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\example">
+      <UniqueIdentifier>{d4f404b1-9932-401d-b7ff-0f9992e2045b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libs/nlohmann">
+      <UniqueIdentifier>{55edf917-d415-413c-b320-f8cfd8f1c242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libs/stb">
+      <UniqueIdentifier>{c11b7357-8bd8-48fd-a155-1426444ec68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs/ImPlot">
+      <UniqueIdentifier>{82e3f660-1919-434e-be2d-b8b1565caea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libs/ImPlot">
+      <UniqueIdentifier>{1aeaf701-183e-402e-8f03-7be47da81618}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FinApp_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\cpp-httplib\example\client.cc">
+      <Filter>Source Files\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\cpp-httplib\example\hello.cc">
+      <Filter>Source Files\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\cpp-httplib\example\server.cc">
+      <Filter>Source Files\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\cpp-httplib\example\simplesvr.cc">
+      <Filter>Source Files\example</Filter>
+    </ClCompile>
+    <ClCompile Include="stocks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImPlot\implot.cpp">
+      <Filter>Source Files\libs/ImPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImPlot\implot_demo.cpp">
+      <Filter>Source Files\libs/ImPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImPlot\implot_items.cpp">
+      <Filter>Source Files\libs/ImPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui.cpp">
+      <Filter>Source Files\libs/ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_demo.cpp">
+      <Filter>Source Files\libs/ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_draw.cpp">
+      <Filter>Source Files\libs/ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_glfw.cpp">
+      <Filter>Source Files\libs/ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\libs/ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_tables.cpp">
+      <Filter>Source Files\libs/ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\imgui_widgets.cpp">
+      <Filter>Source Files\libs/ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\ImGui\GLFW_OpenGL\misc\cpp\imgui_stdlib.cpp">
+      <Filter>Source Files\libs/ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libs\cpp-httplib\httplib.h">
+      <Filter>Header Files\libs/cpp-httplib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\nlohmann\nlohmann\json.hpp">
+      <Filter>Header Files\libs/nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="stocks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\stb\stb_image.h">
+      <Filter>Header Files\libs/stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImPlot\implot_internal.h">
+      <Filter>Header Files\libs/ImPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImPlot\implot.h">
+      <Filter>Header Files\libs/ImPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imconfig.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_glfw.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_opengl3.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui_impl_opengl3_loader.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imgui_internal.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imstb_rectpack.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imstb_textedit.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\imstb_truetype.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\GLFW\glfw3.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\GLFW\glfw3native.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\misc\cpp\imgui_stdlib.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\ImGui\GLFW_OpenGL\misc\single_file\imgui_single_file.h">
+      <Filter>Header Files\libs/ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource Files\abrvList_NASDAQ100.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\abrvList_SP500.json">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
