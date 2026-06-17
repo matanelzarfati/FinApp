@@ -1,9 +1,11 @@
 # FinApp
 
-**Authors:** Matanel Zarfati and Daniel Benshtein
-**Project Type:** B.Sc. Computer Science Final Project
-**Language:** C++
-**License:** MIT License
+| Field        | Details                              |
+| ------------ | ------------------------------------ |
+| Authors      | Matanel Zarfati and Daniel Benshtein |
+| Project Type | B.Sc. Computer Science Final Project |
+| Language     | C++                                  |
+| License      | MIT License                          |
 
 FinApp is a C++ desktop application for tracking and visualizing capital market data.
 The application provides a graphical interface for browsing stocks, viewing historical price charts, and refreshing market data through HTTP/S requests.
