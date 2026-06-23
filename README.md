@@ -1,13 +1,12 @@
 # FinApp
 
-| Field        | Details                              |
-| ------------ | ------------------------------------ |
-| Authors      | Matanel Zarfati and Daniel Benshtein |
-| Project Type | B.Sc. Computer Science Final Project |
-| Language     | C++                                  |
-| License      | MIT License                          |
+* **Authors:** Matanel Zarfati and Daniel Benshtein
+* **Project Type:** B.Sc. Computer Science Final Project
+* **Language:** C++
+* **License:** MIT License. See [License](#license).
 
 FinApp is a C++ desktop application for tracking and visualizing capital market data.
+
 The application provides a graphical interface for browsing stocks, viewing historical price charts, refreshing market data through HTTP/S requests, and saving runtime logs for monitoring application activity.
 
 The project was developed as a Computer Science final project and focuses on C++ programming, GUI development, data handling, multithreading, logging, and third-party library integration.
@@ -22,9 +21,10 @@ The project was developed as a Computer Science final project and focuses on C++
 
 ## Overview
 
-FinApp allows users to explore stock market data through a desktop interface built with Dear ImGui, GLFW, OpenGL3, and ImPlot.
+FinApp allows users to explore stock market data through a desktop interface built with Dear ImGui, GLFW, OpenGL 3, and ImPlot.
 
 The application displays a list of stocks, allows the user to select a symbol, and visualizes historical stock price data over different time ranges.
+
 Market data is retrieved through HTTP/S requests, parsed from JSON, processed by the application, and presented in an interactive chart-based interface.
 
 The project also includes a logging mechanism that writes application activity and runtime events into a dedicated `Logs_FinApp/` directory.
@@ -55,7 +55,7 @@ This project demonstrates practical use of modern C++ concepts together with ext
 * C++
 * Dear ImGui
 * GLFW
-* OpenGL3
+* OpenGL 3
 * ImPlot
 * cpp-httplib
 * OpenSSL
@@ -135,30 +135,32 @@ This project was developed according to academic project requirements and includ
 
 This project was developed as a Visual Studio C++ solution.
 
-### Build steps
-
-1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone git@github.com:matanelzarfati/FinApp.git
 ```
 
-2. Open the solution file:
+### 2. Open the solution file
 
 ```text
 FinApp.sln
 ```
 
-3. Build the project in Visual Studio.
+### 3. Build the project
 
-4. Run the application from Visual Studio.
+Open the solution in Visual Studio and build the project.
+
+### 4. Run the application
+
+Run the application from Visual Studio.
 
 ---
 
 ## Notes
 
 * This project is intended for academic and portfolio purposes.
-* Market data availability may depend on the API/source used by the application.
+* Market data availability may depend on the API or source used by the application.
 * The application is not intended to provide financial advice.
 * Runtime logs are generated and stored under the `Logs_FinApp/` directory.
 * Some third-party dependencies are included under the `libs/` directory.
@@ -202,4 +204,5 @@ FinApp.sln
 ## License
 
 This project is licensed under the MIT License.
-See the [LICENSE](LICENSE) file for details.
+
+For full license terms, see [LICENSE](LICENSE).
