@@ -7,7 +7,7 @@
 
 FinApp is a C++ desktop application for tracking and visualizing capital market data.
 
-The application provides a graphical interface for browsing stocks, viewing historical price charts, refreshing market data through HTTP/S requests, and saving runtime logs for monitoring application activity.
+The application provides a graphical interface for browsing stocks, viewing historical price charts, refreshing market data through HTTP/HTTPS requests, and saving runtime logs for monitoring application activity.
 
 The project was developed as a Computer Science final project and focuses on C++ programming, GUI development, data handling, multithreading, logging, and third-party library integration.
 
@@ -25,7 +25,7 @@ FinApp allows users to explore stock market data through a desktop interface bui
 
 The application displays a list of stocks, allows the user to select a symbol, and visualizes historical stock price data over different time ranges.
 
-Market data is retrieved through HTTP/S requests, parsed from JSON, processed by the application, and presented in an interactive chart-based interface.
+Market data is retrieved through HTTP/HTTPS requests, parsed from JSON, processed by the application, and presented in an interactive chart-based interface.
 
 The project also includes a logging mechanism that writes application activity and runtime events into a dedicated `Logs_FinApp/` directory.
 
@@ -39,7 +39,7 @@ This project demonstrates practical use of modern C++ concepts together with ext
 * Stock list with company names, symbols, and latest prices
 * Historical price chart visualization
 * Support for multiple time ranges
-* HTTP/S data fetching
+* HTTP/HTTPS data fetching
 * JSON parsing and data processing
 * Interactive UI built with Dear ImGui
 * Chart rendering with ImPlot
@@ -113,7 +113,7 @@ This project was developed according to academic project requirements and includ
 * Multithreading using C++ threads
 * Synchronization with atomic variables and mutexes
 * Integration of third-party libraries
-* HTTP/S requests to retrieve market data
+* HTTP/HTTPS requests to retrieve market data
 * JSON data parsing and processing
 * GUI-based presentation and user interaction
 
@@ -124,7 +124,7 @@ This project was developed according to academic project requirements and includ
 * [Dear ImGui](https://github.com/ocornut/imgui) — graphical user interface
 * [ImPlot](https://github.com/epezent/implot) — plotting and chart visualization
 * [GLFW](https://www.glfw.org/) — window and input handling
-* [cpp-httplib](https://github.com/yhirose/cpp-httplib) — HTTP/S requests
+* [cpp-httplib](https://github.com/yhirose/cpp-httplib) — HTTP/HTTPS requests
 * [nlohmann/json](https://github.com/nlohmann/json) — JSON parsing
 * [OpenSSL](https://www.openssl.org/) — SSL support for secure requests
 * [stb](https://github.com/nothings/stb) — single-file public domain libraries
@@ -164,7 +164,6 @@ Run the application from Visual Studio.
 * The application is not intended to provide financial advice.
 * Runtime logs are generated and stored under the `Logs_FinApp/` directory.
 * Some third-party dependencies are included under the `libs/` directory.
-* The project was originally developed as a final project instead of an exam.
 
 ---
 
@@ -173,7 +172,7 @@ Run the application from Visual Studio.
 * Building a desktop application in C++
 * Designing an interactive GUI with Dear ImGui
 * Rendering financial charts with ImPlot
-* Fetching data using HTTP/S requests
+* Fetching data using HTTP/HTTPS requests
 * Parsing and processing JSON data
 * Managing local files with filesystem and fstream
 * Implementing runtime logging
