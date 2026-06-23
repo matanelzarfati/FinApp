@@ -138,7 +138,7 @@ This project was developed as a Visual Studio C++ solution.
 ### 1. Clone the repository
 
 ```bash
-git clone git@github.com:matanelzarfati/FinApp.git
+git clone https://github.com/matanelzarfati/FinApp.git
 ```
 
 ### 2. Open the solution file
